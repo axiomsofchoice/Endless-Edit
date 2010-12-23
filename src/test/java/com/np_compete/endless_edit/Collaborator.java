@@ -13,6 +13,10 @@ package com.np_compete.endless_edit;
  * degrees collaborators gain points with the meta-goal of
  * obtaining higher and higher scores.</p>
  * 
+ * <p>A collaborator has no control of the position they occupy
+ * in the document and so to determine this they must consult the
+ * encompassing collaboration.</p>
+ * 
  * @author axiomsofchoice
  *
  */
