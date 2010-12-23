@@ -24,7 +24,15 @@ import java.util.Iterator;
  */
 public class Collaboration implements Collection {
 
+	public Collaboration(int articleLength) {
+		// TODO Auto-generated constructor stub
+		this.article = new Article(articleLength) ;
+	}
+	
 	// The collection of collaborators
+	
+	// The document the collaborators are working on
+	Article article ;
 	
 	/**
 	 * Obtain a copy of the current state of the document by
