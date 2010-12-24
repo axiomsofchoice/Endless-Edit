@@ -21,7 +21,7 @@ package com.np_compete.endless_edit;
  */
 public class Collaboration {
 
-	private Collaboration(int articleLength) {
+	public Collaboration(int articleLength) {
 		this.article = new Article(articleLength) ;
 	}
 
