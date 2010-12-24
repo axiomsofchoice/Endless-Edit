@@ -3,9 +3,6 @@
  */
 package com.np_compete.endless_edit;
 
-import java.util.Collection;
-import java.util.Iterator;
-
 /**
  * <p>A collaboration is collection of collaborators. As such
  * it is the responsibility of the collaboration object to
@@ -22,13 +19,12 @@ import java.util.Iterator;
  * @author axiomsofchoice
  *
  */
-public class Collaboration implements Collection {
+public class Collaboration {
 
-	public Collaboration(int articleLength) {
-		// TODO Auto-generated constructor stub
+	private Collaboration(int articleLength) {
 		this.article = new Article(articleLength) ;
 	}
-	
+
 	// The collection of collaborators
 	
 	// The document the collaborators are working on
@@ -50,68 +46,5 @@ public class Collaboration implements Collection {
 		return collaborator ;
 	}
 
-	public boolean add(Object arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
 
-	public boolean addAll(Collection arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public void clear() {
-		// TODO Auto-generated method stub
-		
-	}
-
-	public boolean contains(Object o) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public boolean containsAll(Collection arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public boolean isEmpty() {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public Iterator iterator() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public boolean remove(Object o) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public boolean removeAll(Collection arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public boolean retainAll(Collection arg0) {
-		// TODO Auto-generated method stub
-		return false;
-	}
-
-	public int size() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
-
-	public Object[] toArray() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	public Object[] toArray(Object[] arg0) {
-		// TODO Auto-generated method stub
-		return null;
-	}
 }
