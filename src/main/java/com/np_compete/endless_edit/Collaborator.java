@@ -22,4 +22,49 @@ package com.np_compete.endless_edit;
  */
 public class Collaborator {
 
+	// The system identifier for the colaborator
+	// TODO: Must be unique so perhaps this is not the best
+	// place for it to be stored.
+	private String collaboratorId ;
+	
+	// The author name in general corresponds to a "real-world name"
+	private String authorName ;
+	
+	// The contributed string to the article from this author
+	private String contribution ;
+	
+	/**
+	 * @param userName TODO
+	 * 
+	 */
+	public Collaborator(String userId, String userName) {
+		this.collaboratorId = userId ;
+		this.authorName = userName;
+		// TODO: Change this default and allow it to be updated more than once
+		this.contribution = "" ;
+	}
+
+	/**
+	 * Get the "real-world" name of this collaborator as
+	 * appropriate for populating the author list.
+	 * 
+	 * @return
+	 */
+	public String getAuthorName() {
+		return this.authorName;
+	}
+	
+	/**
+	 * Get the complete current contribution for this collaborator.
+	 * The collaboration object so the first n characters from the
+	 * string returned by the method as appropriate for the purpose
+	 * of constructing the complete article.
+	 * 
+	 * @return
+	 */
+
+	public String getAuthorContribution() {
+		return this.contribution;
+	}
+
 }
